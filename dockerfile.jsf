@@ -1,0 +1,26 @@
+# JOE syntax highlight file for Dockerfile
+
+=Idle
+=Comment	green
+=Instruction	blue
+
+:idle Idle
+	*		idle
+	"a-zA-Z"	instruction	noeat
+	"#"		comment		recolor=-1
+	
+:comment Comment
+	*		comment
+	"\n"		idle		noeat
+	
+:instruction Instruction
+	*		instruction
+	" \t"		arguments	noeat
+	
+:arguments Idle:
+	*		arguments
+	"\n"		idle
+	"#"		comment
+		
+	
+	
