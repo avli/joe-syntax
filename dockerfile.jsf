@@ -17,7 +17,7 @@
 	*		instruction
 	" \t"		arguments	noeat
 	
-:arguments Idle:
+:arguments Idle
 	*		arguments
 	"\n"		idle
 	"#"		comment
