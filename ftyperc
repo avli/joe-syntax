@@ -1022,3 +1022,7 @@
 -syntax elixir
 -pound_comment
 -text_delimiters do=end
+
+*Dockerfile
+-syntax dockerfile
+
