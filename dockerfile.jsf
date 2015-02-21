@@ -5,19 +5,20 @@
 =Instruction	blue
 
 :idle Idle
-	*		idle
+	*		arguments
 	"a-zA-Z"	instruction	noeat
 	"#"		comment		recolor=-1
+	"\n"		idle
 	
 :comment Comment
 	*		comment
-	"\n"		idle		noeat
+	"\n"		idle
 	
 :instruction Instruction
 	*		instruction
 	" \t"		arguments	noeat
 	
-:arguments Idle:
+:arguments Idle
 	*		arguments
 	"\n"		idle
 	"#"		comment
